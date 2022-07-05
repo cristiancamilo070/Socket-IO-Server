@@ -6,7 +6,7 @@ const bands =new Bands();
 
 bands.addBand(new Band('Papoman'));
 bands.addBand(new Band('Bad bunny'));
-bands.addBand(new Band('Coffy el cafetero'));
+bands.addBand(new Band('Shakira'));
 bands.addBand(new Band('Maluma'));
 
 console.log(bands);
