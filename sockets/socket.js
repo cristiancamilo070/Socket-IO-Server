@@ -29,5 +29,10 @@ io.on('connection', client => {
     client.on('emitir-mensaje',(payload)=>{
         client.broadcast.emit('nuevo-mensaje',payload);
     });
+    
+    client.on('vote-band',(payload)=>{
+        bands.voteBand(payload.id);
+        io.emit('active-bands',bands.getBands());//Todos los clientes conectados IO
+    });
 
   });
